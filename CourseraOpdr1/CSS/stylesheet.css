@@ -9,32 +9,35 @@ h1 {
     text-align: center;
     margin-bottom: 15px;
 }
-h2 {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
+
 div#container {
     position: relative;
     top: 60px;
+    padding: 10px;
 }
 div#text {
     border: 1px solid black;
-    margin: 5px;
+    margin: 1%;
     float: left;
     height: 200px;
     background-color: rgb(153,153,153);
+
+    /* Default setting to fix a strange screen 0size transition issue */
+    width: 47.9%;
 }
 
 div#text2 {
     border: 1px solid black;
-    margin: 5px;
+    margin: 1%;
     float: left;
     height: 200px;
     background-color: rgb(153,153,153);
+
+    /* Default setting to fix a strange screen size transition issue */
+    width: 97.8%; 
 }
 
-div#title {
+div#title, div#title2, div#title3 {
     border-left: 1px solid black;
     border-bottom: 1px solid black;
     padding: 10px;
@@ -44,6 +47,17 @@ div#title {
     width: 100px;
     text-align: center;
 }
+div#title {
+    background-color: rgb(213,152,152);
+}
+div#title2 {
+    background-color: rgb(193,69,67);
+    color: white;
+}
+div#title3 {
+    background-color: rgb(229,209,152);
+}
+
 div#innerText{
     padding: 10px;
 }
@@ -51,31 +65,31 @@ div#innerText{
 /*************** Desktop ***************/
 @media (min-width: 992px) {
    div#text {
-    width: 30%;   
+    width: 31.3%;   
    }
    div#text2 {
-    width: 30%;
+    width: 31.3%;
    } 
 }
 
 /*************** Tablet ***************/
 @media (min-width: 768px) and (max-width: 991px){
     div#text {
-        width: 45%;
+        width: 47.9%;
     }
     div#text2 {
-        width: 91%;
+        width: 97.8%;
     }
 }
 
 /*************** Mobile ***************/
 @media (max-width: 767px){
     div#text {
-        width: 100%;
+        width: 97.8%;
         clear: both;
     }
     div#text2 {
-        width: 100%;
+        width: 97.8%;
         clear: both;
     }
 }
