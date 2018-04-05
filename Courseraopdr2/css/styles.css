@@ -2,8 +2,13 @@ img {
     width: 100px;
 }
 
+
+
 h1 {
     font-size: 30px;
+}
+h2 {
+    font-size:25px;
 }
 
 .chef, logo {
@@ -12,10 +17,20 @@ h1 {
     padding-left: 10px;
 }
 
+body {
+    background-image: url(knakworst.png);
+}
+
 .menuItem {
     padding-bottom: 15px;
 }
 
 #headerNav {
     padding: 10px;
+}
+
+#sausageRight {
+    float: right;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
