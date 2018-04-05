@@ -1,6 +1,19 @@
 img {
-    width: 30%;
-    height: auto;
+    width: 100px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.chef, logo {
+    font-size: 30px;
+    float: left;
+    padding-left: 10px;
+}
+
+.menuItem {
+    padding-bottom: 15px;
 }
 
 #headerNav {
